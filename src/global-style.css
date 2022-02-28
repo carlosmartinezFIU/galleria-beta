@@ -399,6 +399,7 @@ html body{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 2.5rem 0 2.5rem;
+    border-top: 1px black solid;
 }
 
 
@@ -442,6 +443,109 @@ html body{
     margin-top: 32px;
 }
 
+@media screen and (max-width: 950px) {
+    #home_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 49px;
+        justify-content: center;
+    }
+
+    .panel_three{
+        top: -123px;
+    }
+    .panel_four{
+        top: unset;
+    }
+    .panel_five{
+        top: -95px;
+    }
+    .panel_six{
+        top: 11px;
+    }
+    .panel_seven{
+        top: -63px;
+    }
+    .panel_eight{
+        top: unset;
+    }
+    .panel_nine{
+        top: -34px;
+    }
+    .panel_eleven{
+        top: unset;
+    }
+    .panel_twelve{
+        top: -349px;
+    }
+    .panel_thirteen{
+        top: 22px;
+    }
+    .panel_fourteen{
+        top: -410px;
+    }
+    .panel_fithteen{
+        top: -389px;
+        right: -180px;
+    }
+
+
+
+    .panel_holder{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_thumb_container{
+        top: 238px;
+    }
+    .date_content{
+        right: unset;
+        top: 18px;
+    }
+    .right_content_container{
+        width: 100%;
+        top: 160px;
+    }
+    .right_content_description{
+        width: 457px;
+    }
+    .footer_container{
+        margin-top: 20rem;
+    }
+}
+
+@media screen and (max-width: 708px){
+    .panel_three{
+        top: unset;
+    }
+    .panel_five{
+        top: -4px;
+    }
+    .panel_six{
+        top: -4px;
+    }
+    .panel_seven{
+        top: -7px;
+    }
+    .panel_nine{
+        top: -2px;
+    }
+    .panel_ten{
+        top: unset;
+    }
+    .panel_twelve{
+        top: -7px;
+    }
+    .panel_fourteen{
+        top: -309px;
+    }
+    .panel_fithteen{
+        top: -315px;
+        right: 0px;
+    }
+    
+    
+}
 
 @media screen and (max-width: 550px) {
     /********** Home Page  ********************/

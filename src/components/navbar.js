@@ -17,7 +17,7 @@ export function navigationBar(){
     const slideAnchor = document.createElement("a");
     slideAnchor.classList.add("slide_anchor_button");
     slideAnchor.id = "slide_anchor_button";
-    slideAnchor.href = "slideshow.html";
+    slideAnchor.href = 'slideshow.html';
     const slide = document.createElement("p");
     slide.innerText = "VIEW INFORMATION";
     slide.classList.add("slide_button");
@@ -25,9 +25,6 @@ export function navigationBar(){
     slideAnchor.append(slide);
 
 
-    const slideAnchorStop = document.createElement("a");
-    slideAnchorStop.classList.add("slide_anchor_button_stop");
-    slideAnchorStop.href = "slideshow.html";
 
     const slideContainerStop = document.createElement("div");
     slideContainerStop.classList.add("home_slide_container_stop");

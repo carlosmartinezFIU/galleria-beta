@@ -2,13 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports ={
-    mode: "development",
+    mode: "production",
     entry:{
         home: path.resolve(__dirname, 'src/components/home.js'),
         navbar: path.resolve(__dirname,'src/components/navbar.js'),
         pageone: path.resolve(__dirname,'src/components/pageone.js'),
         four: path.resolve(__dirname, 'src/components/gallerypanels.js'),
-        loader: path.resolve(__dirname, 'src/components/loader.js'),
     },
     output:{
        path: path.resolve(__dirname, "dist"),
@@ -54,7 +53,7 @@ module.exports ={
         new HtmlWebpackPlugin({
             filename: 'slideshow.html',
             template: path.resolve(__dirname, 'src/temps/slideshow.html'),
-            chunks: ['loader'],
+            chunks: ['four'],
             inject: true,
         }),
     ],
